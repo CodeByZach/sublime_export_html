@@ -5,7 +5,7 @@ import textwrap
 import webbrowser
 import re
 
-__version__ = "2.12.1"
+__version__ = "2.13.0"
 __pc_name__ = 'ExportHtml'
 
 CSS = '''
@@ -133,7 +133,7 @@ class ExportHtmlOpenSiteCommand(sublime_plugin.ApplicationCommand):
     """Open site links."""
 
     def run(self, url):
-        """Open the url."""
+        """Open the URL."""
 
         webbrowser.open_new_tab(url)
 

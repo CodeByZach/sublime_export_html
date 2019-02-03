@@ -4,5 +4,5 @@
 		"caption": "Export",
 		"command": "export_html_panel"
 	},
-	{ "caption": "-"}
+	{ "caption": "-" }
 ]

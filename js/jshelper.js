@@ -1,7 +1,7 @@
 function isUndef(obj) {
-  return obj === void 0;
+	return obj === void 0;
 }
 
 function isNull(obj) {
-  return obj === null;
+	return obj === null;
 }

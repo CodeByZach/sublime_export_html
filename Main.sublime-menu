@@ -86,11 +86,24 @@
 						"children":
 						[
 							{
-								"command": "edit_settings", "args": {
+								"caption": "Settings",
+								"command": "edit_settings",
+								"args":
+								{
 									"base_file": "${packages}/ExportHtml/ExportHtml.sublime-settings",
 									"default": "{\n$0\n}\n"
-								},
-								"caption": "Settings"
+								}
+							},
+							{ "caption": "-" },
+							{
+								"caption": "Context Menu",
+								"command": "export_html_edit_settings",
+								"args":
+								{
+									"base_file": "${packages}/ExportHtml/Context.sublime-menu",
+									"user_file": "${packages}/User/ExportHtml/Context.sublime-menu",
+									"default": "[\n$0\n]\n"
+								}
 							},
 							{ "caption": "-" },
 							{
@@ -100,16 +113,12 @@
 							{
 								"caption": "Documentation",
 								"command": "export_html_open_site",
-								"args": {
-									"url": "http://facelessuser.github.io/ExportHtml/"
-								}
+								"args": { "url": "http://facelessuser.github.io/ExportHtml/" }
 							},
 							{
 								"caption": "Quick Start Guide",
 								"command": "export_html_doc",
-								"args": {
-									"page": "${packages}/ExportHtml/quickstart.md"
-								}
+								"args": { "page": "${packages}/ExportHtml/QUICKSTART.md" }
 							},
 							{ "caption": "-" },
 							{
@@ -119,11 +128,14 @@
 							{
 								"caption": "Issues",
 								"command": "export_html_open_site",
-								"args": {
-									"url": "https://github.com/facelessuser/ExportHtml/issues"
-								}
+								"args": { "url": "https://github.com/facelessuser/ExportHtml/issues" }
 							},
-							{ "caption": "-" }
+							{ "caption": "-" },
+							{
+								"caption": "README",
+								"command": "open_file",
+								"args": { "file": "${packages}/ExportHtml/README.md" }
+							}
 						]
 					}
 				]

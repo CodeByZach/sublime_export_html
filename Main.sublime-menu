@@ -87,22 +87,79 @@
 						[
 							{
 								"caption": "Settings",
-								"command": "edit_settings",
+								"command": "z_edit_settings",
 								"args":
 								{
 									"base_file": "${packages}/ExportHtml/ExportHtml.sublime-settings",
-									"default": "{\n$0\n}\n"
+									"user_file": "${packages}/User/ExportHtml/ExportHtml.sublime-settings",
+									"default": "{\n\t$0\n}\n"
 								}
 							},
 							{ "caption": "-" },
 							{
-								"caption": "Context Menu",
-								"command": "export_html_edit_settings",
+								"caption": "Key Bindings",
+								"command": "z_edit_settings",
 								"args":
 								{
-									"base_file": "${packages}/ExportHtml/Context.sublime-menu",
-									"user_file": "${packages}/User/ExportHtml/Context.sublime-menu",
-									"default": "[\n$0\n]\n"
+									"base_file": "${packages}/ExportHtml/Default (${platform}).sublime-keymap",
+									"default": "[\n\t$0\n]\n"
+								}
+							},
+							{ "caption": "-" },
+							{
+								"caption": "Menus",
+								"children":
+								[
+									{
+										"caption": "Context Menu",
+										"command": "z_edit_settings",
+										"args":
+										{
+											"file": "${packages}/ExportHtml/Context.sublime-menu",
+											"is_parent_setting": "1",
+											"contents": "[\n\t$0\n]\n"
+										}
+									},
+									{
+										"caption": "Side Bar Menu",
+										"command": "z_edit_settings",
+										"args":
+										{
+											"file": "${packages}/ExportHtml/Side Bar.sublime-menu",
+											"is_parent_setting": "1",
+											"contents": "[\n\t$0\n]\n"
+										}
+									},
+									{
+										"caption": "Tab Menu",
+										"command": "z_edit_settings",
+										"args":
+										{
+											"file": "${packages}/ExportHtml/Tab Context.sublime-menu",
+											"is_parent_setting": "1",
+											"contents": "[\n\t$0\n]\n"
+										}
+									},
+									{
+										"caption": "Main Menu",
+										"command": "z_edit_settings",
+										"args":
+										{
+											"file": "${packages}/ExportHtml/Main.sublime-menu",
+											"is_parent_setting": "1",
+											"contents": "[\n\t$0\n]\n"
+										}
+									}
+								]
+							},
+							{
+								"caption": "Commands",
+								"command": "z_edit_settings",
+								"args":
+								{
+									"file": "${packages}/ExportHtml/Default.sublime-commands",
+									"is_parent_setting": "1",
+									"default": "[\n\t$0\n]\n"
 								}
 							},
 							{ "caption": "-" },

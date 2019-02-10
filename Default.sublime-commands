@@ -33,11 +33,12 @@
 	},
 	{
 		"caption": "ExportHtml: Settings",
-		"command": "edit_settings",
+		"command": "z_edit_settings",
 		"args":
 		{
 			"base_file": "${packages}/ExportHtml/ExportHtml.sublime-settings",
-			"default": "{\n$0\n}\n"
+			"user_file": "${packages}/User/ExportHtml/ExportHtml.sublime-settings",
+			"default": "{\n\t$0\n}\n"
 		}
 	}
 ]

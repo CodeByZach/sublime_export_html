@@ -87,11 +87,10 @@
 						[
 							{
 								"caption": "Settings",
-								"command": "z_edit_settings",
+								"command": "edit_settings",
 								"args":
 								{
 									"base_file": "${packages}/ExportHtml/ExportHtml.sublime-settings",
-									"user_file": "${packages}/User/ExportHtml/ExportHtml.sublime-settings",
 									"default": "{\n\t$0\n}\n"
 								}
 							},

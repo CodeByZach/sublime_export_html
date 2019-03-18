@@ -30,4 +30,4 @@ https://eatbreathecode.github.io/sublime_export_html/
 
 # License
 
-This work is licensed under the [The MIT License](LICENSE.md).
+This work is licensed under the [The MIT License](LICENSE).

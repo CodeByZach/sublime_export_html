@@ -1,3 +1,6 @@
+[![Unix Build Status][travis-image]][travis-link]
+[![Package Control Downloads][pc-image]][pc-link]
+![License][license-image]
 # ExportHtml
 
 This is a fork of [Andrew Gibson](https://github.com/agibsonsw)'s [PrintHtml](https://github.com/agibsonsw/PrintHtml) plugin.  This plugin allows the exporting of a document in Sublime Text to a HTML file or to BBCode.  It duplicates Sublime's theme colors and font styles.
@@ -31,3 +34,9 @@ https://eatbreathecode.github.io/sublime_export_html/
 # License
 
 This work is licensed under the [The MIT License](LICENSE).
+
+[travis-image]: https://img.shields.io/travis/facelessuser/ExportHtml/master.svg
+[travis-link]: https://travis-ci.org/facelessuser/ExportHtml
+[pc-image]: https://img.shields.io/packagecontrol/dt/ExportHtml.svg?logo=sublime%20text&logoColor=cccccc
+[pc-link]: https://packagecontrol.io/packages/ExportHtml
+[license-image]: https://img.shields.io/badge/license-MIT-blue.svg

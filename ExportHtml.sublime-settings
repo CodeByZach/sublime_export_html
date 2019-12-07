@@ -71,7 +71,7 @@
 				"wrap": 900,
 				"browser_print": true,
 				"multi_select": true,
-				"color_scheme": "Packages/ExportHtml/ColorSchemes/Print-Color.tmTheme",
+				"color_scheme": "Packages/ExportHtml/ColorSchemes/Print-Color",
 				"style_gutter": false,
 				"diable_nbsp": true
 			}
@@ -87,7 +87,7 @@
 				"wrap": 900,
 				"browser_print": true,
 				"multi_select": true,
-				"color_scheme": "Packages/ExportHtml/ColorSchemes/Print-Grayscale.tmTheme",
+				"color_scheme": "Packages/ExportHtml/ColorSchemes/Print-Grayscale",
 				"style_gutter": false,
 				"diable_nbsp": true
 			}
@@ -95,8 +95,8 @@
 
 		/*
 		 * Browser print color - highlighted selections.
-		 * Background colors are disabled in browser printing by default,
-		 * so they will not print until background color printing is enabled.
+		 * Background colors are disabled in browser printing by default, so they will not
+		 * print until background color printing is enabled.
 		 *
 		 * (selections and multi-selections allowed)
 		 */
@@ -106,7 +106,7 @@
 				"wrap": 900,
 				"browser_print": true,
 				"highlight_selections": true,
-				"color_scheme": "Packages/ExportHtml/ColorSchemes/Print-Color.tmTheme",
+				"color_scheme": "Packages/ExportHtml/ColorSchemes/Print-Color",
 				"style_gutter": false,
 				"diable_nbsp": true
 			}
@@ -114,8 +114,8 @@
 
 		/*
 		 * Browser print black and white - highlighted selections.
-		 * Background colors are disabled in browser printing by default,
-		 * so they will not print until background color printing is enabled.
+		 * Background colors are disabled in browser printing by default, so they will not
+		 * print until background color printing is enabled.
 		 *
 		 * (selections and multi-selections allowed)
 		 */
@@ -125,7 +125,7 @@
 				"wrap": 900,
 				"browser_print": true,
 				"highlight_selections": true,
-				"color_scheme": "Packages/ExportHtml/ColorSchemes/Print-Grayscale.tmTheme",
+				"color_scheme": "Packages/ExportHtml/ColorSchemes/Print-Grayscale",
 				"style_gutter": false,
 				"diable_nbsp": true
 			}
@@ -139,7 +139,7 @@
 			"Browser View - Color": {
 				"numbers": true,
 				"multi_select": true,
-				"color_scheme": "Packages/ExportHtml/ColorSchemes/Print-Color.tmTheme"
+				"color_scheme": "Packages/ExportHtml/ColorSchemes/Print-Color"
 			}
 		},
 
@@ -151,7 +151,7 @@
 			"Browser View - Grayscale": {
 				"numbers": true,
 				"multi_select": true,
-				"color_scheme": "Packages/ExportHtml/ColorSchemes/Print-Grayscale.tmTheme"
+				"color_scheme": "Packages/ExportHtml/ColorSchemes/Print-Grayscale"
 			}
 		},
 
@@ -163,7 +163,7 @@
 			"Browser View - Color (Selection Highlights)": {
 				"numbers": true,
 				"highlight_selections": true,
-				"color_scheme": "Packages/ExportHtml/ColorSchemes/Print-Color.tmTheme"
+				"color_scheme": "Packages/ExportHtml/ColorSchemes/Print-Color"
 			}
 		},
 
@@ -175,7 +175,7 @@
 			"Browser View - Grayscale (Selection Highlights)": {
 				"numbers": true,
 				"highlight_selections": true,
-				"color_scheme": "Packages/ExportHtml/ColorSchemes/Print-Grayscale.tmTheme"
+				"color_scheme": "Packages/ExportHtml/ColorSchemes/Print-Grayscale"
 			}
 		},
 
@@ -189,7 +189,7 @@
 				"numbers": true,
 				"wrap": 900,
 				"multi_select": true,
-				"color_scheme": "Packages/ExportHtml/ColorSchemes/Print-Color.tmTheme"
+				"color_scheme": "Packages/ExportHtml/ColorSchemes/Print-Color"
 			}
 		},
 
@@ -203,7 +203,7 @@
 				"numbers": true,
 				"wrap": 900,
 				"multi_select": true,
-				"color_scheme": "Packages/ExportHtml/ColorSchemes/Print-Grayscale.tmTheme"
+				"color_scheme": "Packages/ExportHtml/ColorSchemes/Print-Grayscale"
 			}
 		}
 	],

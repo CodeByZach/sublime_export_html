@@ -1,0 +1,94 @@
+template: 'facelessuser:master-labels:labels.yml:master'
+
+# Wildcard labels
+
+brace_expansion: true
+extended_glob: true
+
+rules:
+  - labels: ['C: infrastructure']
+    patterns: ['*|-@(*.md|*.py|*.sublime-@(keymap|menu|settings|commands|color-scheme))', '.github/**']
+
+  - labels: ['C: source']
+    patterns: ['**/@(*.py|*.sublime-@(keymap|menu|settings|commands|color-scheme))|-tests']
+
+  - labels: ['C: docs']
+    patterns: ['**/*.md|docs/**']
+
+  - labels: ['C: tests']
+    patterns: ['tests/**']
+
+  - labels: ['C: export-html']
+    patterns: ['ExportHtml.py']
+
+  - labels: ['C: html-assets']
+    patterns: ['@(js|css)/**']
+
+  - labels: ['C: color-schemes']
+    patterns: ['ColorSchemes/**']
+
+  - labels: ['C: icons']
+    patterns: ['icons/**']
+
+  - labels: ['C: export-bbcode']
+    patterns: ['ExportBbcode.py']
+
+  - labels: ['C: scheme-handling']
+    patterns: ['lib/color_scheme*.py|lib/rgba.py|lib/x11colors.py']
+
+  - labels: ['C: notify']
+    patterns: ['lib/notify.py']
+
+  - labels: ['C: browser']
+    patterns: ['lib/browsers.py']
+
+  - labels: ['C: settings']
+    patterns: ['*.sublime-@(keymap|menu|settings|commands|color-scheme)']
+
+# Label management
+
+labels:
+- name: 'C: export-html'
+  renamed: export-html
+  color: subcategory
+  description: Related to HTML exporting.
+
+- name: 'C: export-bbcode'
+  renamed: export-bbcode
+  color: subcategory
+  description: Related to BBCode exporting.
+
+- name: 'C: scheme-handling'
+  renamed: scheme-handling
+  color: subcategory
+  description: Related to scheme handling.
+
+- name: 'C: notify'
+  renamed: notify
+  color: subcategory
+  description: Related to notifications.
+
+- name: 'C: browser'
+  renamed: browser
+  color: subcategory
+  description: Related to browser handling.
+
+- name: 'C: html-assets'
+  renamed: html-assets
+  color: subcategory
+  description: Related to HTML assets.
+
+- name: 'C: color-schemes'
+  renamed: color-schemes
+  color: subcategory
+  description: Related to provided color schemes.
+
+- name: 'C: icons'
+  renamed: icons
+  color: subcategory
+  description: Related to icons.
+
+- name: 'C: settings'
+  renamed: settings
+  color: subcategory
+  description: Related to Sublime settings.

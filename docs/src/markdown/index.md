@@ -25,5 +25,3 @@ This is a fork of [Andrew Gibson][gibson]'s [PrintHtml][print-html] plugin.  Thi
 
 - [Andrew Gibson][gibson]: Original idea and base code for converting Sublime view to HTML and allowing me to build off it to make ExportHtml.
 - Print-Color and Print-Grayscale tmThemes were derived from Monokai Bright.
-
---8<-- "refs.md"

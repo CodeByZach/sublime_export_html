@@ -10,13 +10,13 @@ LINE_PRESERVE = re.compile(r"\r?\n", re.MULTILINE)
 CPP_PATTERN = re.compile(
 	r'''(?x)
 		(?P<comments>
-			/\*[^*]*\*+(?:[^/*][^*]*\*+)*/  # multi-line comments
-		  | \s*//(?:[^\r\n])*               # single line comments
+			/\*[^*]*\*+(?:[^/*][^*]*\*+)*/ # multi-line comments
+			| \s*//(?:[^\r\n])*            # single line comments
 		)
-	  | (?P<code>
-			"(?:\\.|[^"\\])*"               # double quotes
-		  | '(?:\\.|[^'\\])*'               # single quotes
-		  | .[^/"']*                        # everything else
+		| (?P<code>
+			"(?:\\.|[^"\\])*"              # double quotes
+			| '(?:\\.|[^'\\])*'            # single quotes
+			| .[^/"']*                     # everything else
 		)
 	''',
 	re.DOTALL
@@ -24,14 +24,14 @@ CPP_PATTERN = re.compile(
 PY_PATTERN = re.compile(
 	r'''(?x)
 		(?P<comments>
-			\s*\#(?:[^\r\n])*               # single line comments
+			\s*\#(?:[^\r\n])*              # single line comments
 		)
-	  | (?P<code>
-			"{3}(?:\\.|[^\\])*"{3}          # triple double quotes
-		  | '{3}(?:\\.|[^\\])*'{3}          # triple single quotes
-		  | "(?:\\.|[^"\\])*"               # double quotes
-		  | '(?:\\.|[^'])*'                 # single quotes
-		  | .[^\#"']*                       # everything else
+		| (?P<code>
+			"{3}(?:\\.|[^\\])*"{3}         # triple double quotes
+			| '{3}(?:\\.|[^\\])*'{3}       # triple single quotes
+			| "(?:\\.|[^"\\])*"            # double quotes
+			| '(?:\\.|[^'])*'              # single quotes
+			| .[^\#"']*                    # everything else
 		)
 	''',
 	re.DOTALL

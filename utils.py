@@ -1,10 +1,16 @@
+"""
+Utility Class
+"""
 import sublime
 import sublime_plugin
 import os
 
 
 class ZEditSettings(sublime_plugin.WindowCommand):
+	"""For editing package settings"""
+
 	def run(self, **kwargs):
+		"""Default method"""
 
 		if 'is_parent_setting' in kwargs and kwargs.get('is_parent_setting'):
 			del kwargs['is_parent_setting']
@@ -19,7 +25,7 @@ class ZEditSettings(sublime_plugin.WindowCommand):
 			try:
 				expanded_source_path = sublime.expand_variables(kwargs.get('file'), self.window.extract_variables())
 				# package_name = os.path.basename(os.path.dirname(expanded_source_path.replace(sublime.packages_path(), '')))
-				resource_path = 'Packages'+expanded_source_path.replace(sublime.packages_path(), '')
+				resource_path = 'Packages' + expanded_source_path.replace(sublime.packages_path(), '')
 				sublime.load_resource(resource_path)
 				if 'default' in kwargs:
 					del kwargs['default']
@@ -39,7 +45,7 @@ class ZEditSettings(sublime_plugin.WindowCommand):
 			try:
 				expanded_source_path = sublime.expand_variables(kwargs.get('base_file'), self.window.extract_variables())
 				# package_name = os.path.basename(os.path.dirname(expanded_source_path.replace(sublime.packages_path(), '')))
-				resource_path = 'Packages'+expanded_source_path.replace(sublime.packages_path(), '')
+				resource_path = 'Packages' + expanded_source_path.replace(sublime.packages_path(), '')
 				sublime.load_resource(resource_path)
 
 				self.window.run_command('edit_settings', kwargs)

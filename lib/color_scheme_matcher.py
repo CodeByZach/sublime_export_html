@@ -797,7 +797,7 @@ class ColorSchemeMatcher(object):
 					best_match_style = match
 					for s in self.colors[key]["style"]:
 						if not (s == "bold" and no_bold) and not (s == "italic" and no_italic):
-						style.add(s)
+							style.add(s)
 						if s == "bold":
 							style_selectors["bold"] = SchemeSelectors(
 								self.colors[key]["name"], self.colors[key]["scope"]

@@ -57,7 +57,7 @@ matrix:
 
 - name: markdown
   sources:
-  - readme.md
+  - README.md
   hunspell:
     d: en_US
   aspell:

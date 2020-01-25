@@ -1,6 +1,6 @@
 site_name: ExportHtml Documentation
-site_url: https://facelessuser.github.io/ExportHtml
-repo_url: https://github.com/facelessuser/ExportHtml
+site_url: https://eatbreathecode.github.io/sublime_export_html
+repo_url: https://github.com/EatBreatheCode/sublime_export_html
 edit_uri: tree/master/docs/src/markdown
 site_description: Sublime Text plugin that exports code to HTML or BBCODE for copying, printing, or saving.
 copyright: |
@@ -54,8 +54,8 @@ markdown_extensions:
   - pymdownx.magiclink:
       repo_url_shortener: true
       repo_url_shorthand: true
-      user: facelessuser
-      repo: ExportHtml
+      user: EatBreatheCode
+      repo: sublime_export_html
   - pymdownx.tilde:
   - pymdownx.caret:
   - pymdownx.smartsymbols:
@@ -78,7 +78,7 @@ markdown_extensions:
 extra:
   social:
     - type: github
-      link: https://github.com/facelessuser
+      link: https://github.com/EatBreatheCode
 extra_css:
   - extra-30d8e6755c.css
 extra_javascript:

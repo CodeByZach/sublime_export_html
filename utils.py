@@ -1,14 +1,14 @@
-"""Utility Class"""
+"""Utility Class."""
 import sublime
 import sublime_plugin
 import os
 
 
 class ZEditSettings(sublime_plugin.WindowCommand):
-	"""For editing package settings"""
+	"""For editing package settings."""
 
 	def run(self, **kwargs):
-		"""Default method"""
+		"""Default method."""
 
 		if 'is_parent_setting' in kwargs and kwargs.get('is_parent_setting'):
 			del kwargs['is_parent_setting']

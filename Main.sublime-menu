@@ -169,7 +169,7 @@
 							{
 								"caption": "Documentation",
 								"command": "export_html_open_site",
-								"args": { "url": "http://facelessuser.github.io/ExportHtml/" }
+								"args": { "url": "https://eatbreathecode.github.io/sublime_export_html/" }
 							},
 							{
 								"caption": "Quick Start Guide",
@@ -184,7 +184,7 @@
 							{
 								"caption": "Issues",
 								"command": "export_html_open_site",
-								"args": { "url": "https://github.com/facelessuser/ExportHtml/issues" }
+								"args": { "url": "https://github.com/facelessuser/ExportHtml/issues/" }
 							},
 							{ "caption": "-" },
 							{

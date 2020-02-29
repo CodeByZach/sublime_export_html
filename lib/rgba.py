@@ -171,7 +171,7 @@ class RGBA(object):
 		"""Adjust alpha."""
 
 		if op == OP_SCALE:
-		self.a = round_int(clamp(self.a + (255.0 * factor) - 255.0, 0.0, 255.0))
+			self.a = round_int(clamp(self.a + (255.0 * factor) - 255.0, 0.0, 255.0))
 		elif op == OP_ADD:
 			self.a = round_int(clamp(self.a + (self.a * factor), 0.0, 255.0))
 		elif op == OP_SUB:
@@ -183,7 +183,7 @@ class RGBA(object):
 		"""Adjust red."""
 
 		if op == OP_SCALE:
-		self.r = round_int(clamp(self.r + (255.0 * factor) - 255.0, 0.0, 255.0))
+			self.r = round_int(clamp(self.r + (255.0 * factor) - 255.0, 0.0, 255.0))
 		elif op == OP_ADD:
 			self.r = round_int(clamp(self.r + (self.r * factor), 0.0, 255.0))
 		elif op == OP_SUB:
@@ -195,7 +195,7 @@ class RGBA(object):
 		"""Adjust green."""
 
 		if op == OP_SCALE:
-		self.g = round_int(clamp(self.g + (255.0 * factor) - 255.0, 0.0, 255.0))
+			self.g = round_int(clamp(self.g + (255.0 * factor) - 255.0, 0.0, 255.0))
 		elif op == OP_ADD:
 			self.g = round_int(clamp(self.g + (self.g * factor), 0.0, 255.0))
 		elif op == OP_SUB:
@@ -207,7 +207,7 @@ class RGBA(object):
 		"""Adjust blue."""
 
 		if op == OP_SCALE:
-		self.b = round_int(clamp(self.b + (255.0 * factor) - 255.0, 0.0, 255.0))
+			self.b = round_int(clamp(self.b + (255.0 * factor) - 255.0, 0.0, 255.0))
 		elif op == OP_ADD:
 			self.b = round_int(clamp(self.b + (self.b * factor), 0.0, 255.0))
 		elif op == OP_SUB:
@@ -252,7 +252,7 @@ class RGBA(object):
 
 		h, l, s = self.tohls()
 		if op == OP_SCALE:
-		l = clamp(l + factor - 1.0, 0.0, 1.0)
+			l = clamp(l + factor - 1.0, 0.0, 1.0)
 		elif op == OP_ADD:
 			l = clamp(l + (l * factor), 0.0, 1.0)
 		elif op == OP_SUB:
@@ -357,7 +357,7 @@ class RGBA(object):
 
 		h, l, s = self.tohls()
 		if op == OP_SCALE:
-		s = clamp(s + factor - 1.0, 0.0, 1.0)
+			s = clamp(s + factor - 1.0, 0.0, 1.0)
 		elif op == OP_ADD:
 			s = clamp(s + (s * factor), 0.0, 1.0)
 		elif op == OP_SUB:

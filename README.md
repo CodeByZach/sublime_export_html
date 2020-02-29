@@ -1,4 +1,4 @@
-[![Unix Build Status][travis-image]][travis-link]
+[![Build][github-ci-image]][github-ci-link]
 [![Package Control Downloads][pc-image]][pc-link]
 ![License][license-image]
 # ExportHtml
@@ -43,8 +43,8 @@ The above copyright notice and this permission notice shall be included in all c
 
 This work is licensed under the [The MIT License](LICENSE).
 
-[travis-image]: https://img.shields.io/travis/facelessuser/ExportHtml/master.svg
-[travis-link]: https://travis-ci.org/facelessuser/ExportHtml
-[pc-image]: https://img.shields.io/packagecontrol/dt/ExportHtml.svg?logo=sublime%20text&logoColor=cccccc
+[github-ci-image]: https://github.com/facelessuser/ExportHtml/workflows/build/badge.svg
+[github-ci-link]: https://github.com/facelessuser/ExportHtml/actions?workflow=build
+[pc-image]: https://img.shields.io/packagecontrol/dt/ExportHtml.svg?labelColor=333333&logo=sublime%20text
 [pc-link]: https://packagecontrol.io/packages/ExportHtml
-[license-image]: https://img.shields.io/badge/license-MIT-blue.svg
+[license-image]: https://img.shields.io/badge/license-MIT-blue.svg?labelColor=333333

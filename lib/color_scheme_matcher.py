@@ -228,7 +228,7 @@ def blend(m, limit=False):
 		op = OP_MAP[m.group('sat_op').strip() if m.group('sat_op') else '']
 		if percent.endswith('%'):
 			percent = float(percent.rstrip('%')) / 100.0
-	else:
+		else:
 			percent = float(percent)
 		rgba = RGBA(base)
 		rgba.saturation(percent, op)
@@ -243,7 +243,7 @@ def blend(m, limit=False):
 		rgba = RGBA(base)
 		rgba.luminance(percent, op)
 		color = rgba.get_rgb() if rgba.a == 255 else rgba.get_rgba()
-		else:
+	else:
 		rgba = RGBA(base)
 		color = rgba.get_rgb() if rgba.a == 255 else rgba.get_rgba()
 

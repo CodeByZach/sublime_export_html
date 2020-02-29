@@ -68,10 +68,10 @@ def mix_channel(cf, af, cb, ab):
 	"""
 	Mix the color channel.
 
-    `cf`: Channel foreground
-    `af`: Alpha foreground
-    `cb`: Channel background
-    `ab`: Alpha background
+	`cf`: Channel foreground
+	`af`: Alpha foreground
+	`cb`: Channel background
+	`ab`: Alpha background
 
 	The foreground is overlayed on the secondary color it is to be mixed with.
 	The alpha channels are applied and the colors mix.
@@ -135,7 +135,7 @@ class RGBA(object):
 		return "#%02X%02X%02X%02X" % (self.r, self.g, self.b, self.a)
 
 	def get_rgb(self):
-        """Get the `RGB` value."""
+		"""Get the `RGB` value."""
 
 		return "#%02X%02X%02X" % (self.r, self.g, self.b)
 
@@ -162,58 +162,58 @@ class RGBA(object):
 		return clamp(round_int(0.299 * self.r + 0.587 * self.g + 0.114 * self.b), 0, 255)
 
 	def get_true_luminance(self):
-        """Get true luminance."""
+		"""Get true luminance."""
 
 		l = self.tohls()[1]
 		return clamp(round_int(l * 255.0), 0, 255)
 
-    def alpha(self, factor, op=OP_SCALE):
+	def alpha(self, factor, op=OP_SCALE):
 		"""Adjust alpha."""
 
-        if op == OP_SCALE:
+		if op == OP_SCALE:
 		self.a = round_int(clamp(self.a + (255.0 * factor) - 255.0, 0.0, 255.0))
-        elif op == OP_ADD:
-            self.a = round_int(clamp(self.a + (self.a * factor), 0.0, 255.0))
-        elif op == OP_SUB:
-            self.a = round_int(clamp(self.a - (self.a * factor), 0.0, 255.0))
-        else:
-            self.a = 255.0 * factor
+		elif op == OP_ADD:
+			self.a = round_int(clamp(self.a + (self.a * factor), 0.0, 255.0))
+		elif op == OP_SUB:
+			self.a = round_int(clamp(self.a - (self.a * factor), 0.0, 255.0))
+		else:
+			self.a = 255.0 * factor
 
-    def red(self, factor, op=OP_SCALE):
+	def red(self, factor, op=OP_SCALE):
 		"""Adjust red."""
 
-        if op == OP_SCALE:
+		if op == OP_SCALE:
 		self.r = round_int(clamp(self.r + (255.0 * factor) - 255.0, 0.0, 255.0))
-        elif op == OP_ADD:
-            self.r = round_int(clamp(self.r + (self.r * factor), 0.0, 255.0))
-        elif op == OP_SUB:
-            self.r = round_int(clamp(self.r - (self.r * factor), 0.0, 255.0))
-        else:
-            self.a = 255.0 * factor
+		elif op == OP_ADD:
+			self.r = round_int(clamp(self.r + (self.r * factor), 0.0, 255.0))
+		elif op == OP_SUB:
+			self.r = round_int(clamp(self.r - (self.r * factor), 0.0, 255.0))
+		else:
+			self.a = 255.0 * factor
 
-    def green(self, factor, op=OP_SCALE):
+	def green(self, factor, op=OP_SCALE):
 		"""Adjust green."""
 
-        if op == OP_SCALE:
+		if op == OP_SCALE:
 		self.g = round_int(clamp(self.g + (255.0 * factor) - 255.0, 0.0, 255.0))
-        elif op == OP_ADD:
-            self.g = round_int(clamp(self.g + (self.g * factor), 0.0, 255.0))
-        elif op == OP_SUB:
-            self.g = round_int(clamp(self.g - (self.g * factor), 0.0, 255.0))
-        else:
-            self.a = 255.0 * factor
+		elif op == OP_ADD:
+			self.g = round_int(clamp(self.g + (self.g * factor), 0.0, 255.0))
+		elif op == OP_SUB:
+			self.g = round_int(clamp(self.g - (self.g * factor), 0.0, 255.0))
+		else:
+			self.a = 255.0 * factor
 
-    def blue(self, factor, op=OP_SCALE):
+	def blue(self, factor, op=OP_SCALE):
 		"""Adjust blue."""
 
-        if op == OP_SCALE:
+		if op == OP_SCALE:
 		self.b = round_int(clamp(self.b + (255.0 * factor) - 255.0, 0.0, 255.0))
-        elif op == OP_ADD:
-            self.b = round_int(clamp(self.b + (self.b * factor), 0.0, 255.0))
-        elif op == OP_SUB:
-            self.b = round_int(clamp(self.b - (self.b * factor), 0.0, 255.0))
-        else:
-            self.a = 255.0 * factor
+		elif op == OP_ADD:
+			self.b = round_int(clamp(self.b + (self.b * factor), 0.0, 255.0))
+		elif op == OP_SUB:
+			self.b = round_int(clamp(self.b - (self.b * factor), 0.0, 255.0))
+		else:
+			self.a = 255.0 * factor
 
 	def blend(self, color, percent, alpha=False, color_space=CS_RGB):
 		"""Blend color."""
@@ -247,27 +247,27 @@ class RGBA(object):
 		if alpha:
 			self.a = rgb_blend_channel(self.a, a, factor)
 
-    def luminance(self, factor, op=OP_SCALE):
+	def luminance(self, factor, op=OP_SCALE):
 		"""Get true luminance."""
 
 		h, l, s = self.tohls()
-        if op == OP_SCALE:
+		if op == OP_SCALE:
 		l = clamp(l + factor - 1.0, 0.0, 1.0)
-        elif op == OP_ADD:
-            l = clamp(l + (l * factor), 0.0, 1.0)
-        elif op == OP_SUB:
-            l = clamp(l - (l * factor), 0.0, 1.0)
-        else:
-            l = clamp(factor, 0.0, 1.0)
+		elif op == OP_ADD:
+			l = clamp(l + (l * factor), 0.0, 1.0)
+		elif op == OP_SUB:
+			l = clamp(l - (l * factor), 0.0, 1.0)
+		else:
+			l = clamp(factor, 0.0, 1.0)
 		self.fromhls(h, l, s)
 
 	def tohsv(self):
-        """Convert to `HSV` color format."""
+		"""Convert to `HSV` color format."""
 
 		return rgb_to_hsv(self.r * RGB_CHANNEL_SCALE, self.g * RGB_CHANNEL_SCALE, self.b * RGB_CHANNEL_SCALE)
 
 	def fromhsv(self, h, s, v):
-        """Convert to `RGB` from `HSV`."""
+		"""Convert to `RGB` from `HSV`."""
 
 		r, g, b = hsv_to_rgb(h, s, v)
 		self.r = clamp(round_int(r * 255.0), 0, 255)
@@ -275,12 +275,12 @@ class RGBA(object):
 		self.b = clamp(round_int(b * 255.0), 0, 255)
 
 	def tohls(self):
-        """Convert to `HLS` color format."""
+		"""Convert to `HLS` color format."""
 
 		return rgb_to_hls(self.r * RGB_CHANNEL_SCALE, self.g * RGB_CHANNEL_SCALE, self.b * RGB_CHANNEL_SCALE)
 
 	def fromhls(self, h, l, s):
-        """Convert to `RGB` from `HSL`."""
+		"""Convert to `RGB` from `HSL`."""
 
 		r, g, b = hls_to_rgb(h, l, s)
 		self.r = clamp(round_int(r * 255.0), 0, 255)
@@ -288,7 +288,7 @@ class RGBA(object):
 		self.b = clamp(round_int(b * 255.0), 0, 255)
 
 	def tohwb(self):
-        """Convert to `HWB` from `RGB`."""
+		"""Convert to `HWB` from `RGB`."""
 
 		h, s, v = self.tohsv()
 		w = (1.0 - s) * v
@@ -296,7 +296,7 @@ class RGBA(object):
 		return h, w, b
 
 	def fromhwb(self, h, w, b):
-        """Convert to `RGB` from `HWB`."""
+		"""Convert to `RGB` from `HWB`."""
 
 		# Normalize white and black
 		# w + b <= 1.0
@@ -305,7 +305,7 @@ class RGBA(object):
 			w *= norm_factor
 			b *= norm_factor
 
-        # Convert to `HSV` and then to `RGB`
+		# Convert to `HSV` and then to `RGB`
 		s = 1.0 - (w / (1.0 - b))
 		v = 1.0 - b
 		r, g, b = hsv_to_rgb(h, s, v)
@@ -352,18 +352,18 @@ class RGBA(object):
 		self.g ^= 0xFF
 		self.b ^= 0xFF
 
-    def saturation(self, factor, op=OP_SCALE):
+	def saturation(self, factor, op=OP_SCALE):
 		"""Saturate or unsaturate the color by the given factor."""
 
 		h, l, s = self.tohls()
-        if op == OP_SCALE:
+		if op == OP_SCALE:
 		s = clamp(s + factor - 1.0, 0.0, 1.0)
-        elif op == OP_ADD:
-            s = clamp(s + (s * factor), 0.0, 1.0)
-        elif op == OP_SUB:
-            s = clamp(s - (s * factor), 0.0, 1.0)
-        else:
-            s = clamp(factor, 0.0, 1.0)
+		elif op == OP_ADD:
+			s = clamp(s + (s * factor), 0.0, 1.0)
+		elif op == OP_SUB:
+			s = clamp(s - (s * factor), 0.0, 1.0)
+		else:
+			s = clamp(factor, 0.0, 1.0)
 		self.fromhls(h, l, s)
 
 	def grayscale(self):
@@ -420,7 +420,7 @@ class RGBA(object):
 		"""
 		Adjust the brightness by the given factor.
 
-        Brightness is determined by perceived luminance.
+		Brightness is determined by perceived luminance.
 		"""
 
 		channels = ["r", "g", "b"]

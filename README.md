@@ -1,3 +1,4 @@
+[![Donate via PayPal][donate-image]][donate-link]
 [![Discord][discord-image]][discord-link]
 [![Build][github-ci-image]][github-ci-link]
 [![Package Control Downloads][pc-image]][pc-link]
@@ -10,12 +11,12 @@ This is a fork of [Andrew Gibson](https://github.com/agibsonsw)'s [PrintHtml](ht
 
 # Features
 
-- Export to HTML using any tmTheme for syntax highlighting.
+- Export to HTML using any `tmTheme` or `sublime-color-scheme` for syntax highlighting.
 - Can handle any language supported by ST2.
 - Supports bold and italic theme font styles as well.
 - Configurable output.
 - Format suitable for copying and pasting in emails.
-- 2 included tmTheme files for color and grayscale printing (but any can be used).
+- 2 included `sublime-color-scheme` files for color and grayscale printing (but any can be used).
 - Export only selections (multi-select supported).
 - Export and show highlights (multi-select supported).
 - Toggle gutter on/off in browser view.
@@ -30,7 +31,7 @@ https://eatbreathecode.github.io/sublime_export_html/
 # Credits
 
 - [Andrew Gibson](https://github.com/agibsonsw): Original idea and base code for converting Sublime view to HTML and allowing me to build off it to make ExportHtml.
-- Print-Color and Print-Grayscale tmThemes were derived from Monokai Bright.
+- Print-Color and Print-Grayscale `sublime-color-scheme` files were derived from Monokai Bright.
 
 # License
 
@@ -47,7 +48,9 @@ This work is licensed under the [The MIT License](LICENSE).
 [github-ci-image]: https://github.com/facelessuser/ExportHtml/workflows/build/badge.svg
 [github-ci-link]: https://github.com/facelessuser/ExportHtml/actions?workflow=build
 [discord-image]: https://img.shields.io/discord/678289859768745989?logo=discord&logoColor=aaaaaa&color=mediumpurple&labelColor=333333
-[discord-link]: https://discord.gg/RKHTt2q
+[discord-link]: https://discord.gg/TWs8Tgr
 [pc-image]: https://img.shields.io/packagecontrol/dt/ExportHtml.svg?labelColor=333333&logo=sublime%20text
 [pc-link]: https://packagecontrol.io/packages/ExportHtml
 [license-image]: https://img.shields.io/badge/license-MIT-blue.svg?labelColor=333333
+[donate-image]: https://img.shields.io/badge/Donate-PayPal-3fabd1?logo=paypal
+[donate-link]: https://www.paypal.me/facelessuser

@@ -247,14 +247,14 @@ def blend(m, limit=False):
 	elif m.group('sat_value'):
 		percent = m.group('sat_value')
 		op = OP_MAP[m.group('sat_op').strip() if m.group('sat_op') else '']
-			percent = float(percent.rstrip('%')) / 100.0
+		percent = float(percent.rstrip('%')) / 100.0
 		rgba = RGBA(base)
 		rgba.saturation(percent, op)
 		color = rgba.get_rgb() if rgba.a == 255 else rgba.get_rgba()
 	elif m.group('lit_value'):
 		percent = m.group('lit_value')
 		op = OP_MAP[m.group('lit_op').strip() if m.group('lit_op') else '']
-			percent = float(percent.rstrip('%')) / 100.0
+		percent = float(percent.rstrip('%')) / 100.0
 		rgba = RGBA(base)
 		rgba.luminance(percent, op)
 		color = rgba.get_rgb() if rgba.a == 255 else rgba.get_rgba()

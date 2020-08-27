@@ -1,9 +1,8 @@
-[![Donate via PayPal][donate-image]][donate-link]
-[![Discord][discord-image]][discord-link]
-[![Build][github-ci-image]][github-ci-link]
-[![Package Control Downloads][pc-image]][pc-link]
-![License][license-image]
 # ExportHtml
+[![Latest Release](https://img.shields.io/github/tag/EatBreatheCode/sublime_export_html.svg?label=version)](https://github.com/EatBreatheCode/sublime_export_html/releases)
+[![Build][github-ci-image]][github-ci-link]
+[![Package Control][pc-image]][pc-link]
+[![License][license-image]][license-link]
 
 This is a fork of [Andrew Gibson](https://github.com/agibsonsw)'s [PrintHtml](https://github.com/agibsonsw/PrintHtml) plugin.  This plugin allows the exporting of a document in Sublime Text to a HTML file or to BBCode.  It duplicates Sublime's theme colors and font styles.
 
@@ -45,12 +44,9 @@ The above copyright notice and this permission notice shall be included in all c
 
 This work is licensed under the [The MIT License](LICENSE).
 
-[github-ci-image]: https://github.com/facelessuser/ExportHtml/workflows/build/badge.svg?branch=master&event=push
-[github-ci-link]: https://github.com/facelessuser/ExportHtml/actions?query=workflow%3Abuild+branch%3Amaster
-[discord-image]: https://img.shields.io/discord/678289859768745989?logo=discord&logoColor=aaaaaa&color=mediumpurple&labelColor=333333
-[discord-link]: https://discord.gg/TWs8Tgr
+[github-ci-image]: https://github.com/EatBreatheCode/sublime_export_html/workflows/build/badge.svg?branch=master&event=push
+[github-ci-link]: https://github.com/EatBreatheCode/sublime_export_html/actions?query=workflow%3Abuild+branch%3Amaster
 [pc-image]: https://img.shields.io/packagecontrol/dt/ExportHtml.svg?labelColor=333333&logo=sublime%20text
 [pc-link]: https://packagecontrol.io/packages/ExportHtml
 [license-image]: https://img.shields.io/badge/license-MIT-blue.svg?labelColor=333333
-[donate-image]: https://img.shields.io/badge/Donate-PayPal-3fabd1?logo=paypal
-[donate-link]: https://www.paypal.me/facelessuser
+[license-link]: LICENSE

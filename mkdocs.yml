@@ -1,6 +1,6 @@
 site_name: ExportHtml Documentation
-site_url: https://eatbreathecode.github.io/sublime_export_html
-repo_url: https://github.com/EatBreatheCode/sublime_export_html
+site_url: https://codebyzach.github.io/sublime_export_html
+repo_url: https://github.com/CodeByZach/sublime_export_html
 edit_uri: tree/master/docs/src/markdown
 site_description: Sublime Text plugin that exports code to HTML or BBCODE for copying, printing, or saving.
 copyright: |
@@ -50,7 +50,7 @@ markdown_extensions:
   - pymdownx.magiclink:
       repo_url_shortener: true
       repo_url_shorthand: true
-      user: EatBreatheCode
+      user: CodeByZach
       repo: sublime_export_html
   - pymdownx.tilde:
   - pymdownx.caret:
@@ -75,7 +75,7 @@ markdown_extensions:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/EatBreatheCode
+      link: https://github.com/CodeByZach
     - icon: fontawesome/brands/discord
       link: https://discord.gg/TWs8Tgr
 

@@ -18,7 +18,7 @@ To create your own list of export options, check out the [documentation](http://
 
 ![preview](res://Packages/ExportHtml/docs/src/markdown/images/annotation_preview.png){: width=737px, height=295px}
 
-Annotations was just a fun idea.  Not sure how useful it is in practice, but you can enable annotation mode and select words or phrases and add annotations.  Upon HTML export, the targeted words and phrases will be underlined and on mouseover a tooltip with your annotation will be visible.  To learn more read about annotations in the [documentation](https://eatbreathecode.github.io/sublime_export_html/usage/#annotations-html-only).
+Annotations was just a fun idea.  Not sure how useful it is in practice, but you can enable annotation mode and select words or phrases and add annotations.  Upon HTML export, the targeted words and phrases will be underlined and on mouseover a tooltip with your annotation will be visible.  To learn more read about annotations in the [documentation](https://codebyzach.github.io/sublime_export_html/usage/#annotations-html-only).
 
 # I Want To Use This For Printing
 

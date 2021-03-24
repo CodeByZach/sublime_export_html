@@ -1,6 +1,8 @@
+.DS_Store
 *.pyc
 *.cache
 site/*
 build/*
 .pytest_cache
 .tox/**
+.DS_Store

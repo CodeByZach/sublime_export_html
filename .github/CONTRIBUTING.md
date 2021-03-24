@@ -1,1 +1,1 @@
-Please follow this link to see Contributing &amp; Support documentation: http://facelessuser.github.io/ExportHtml/contributing/.
+Please follow this link to see Contributing &amp; Support documentation: https://codebyzach.github.io/sublime_export_html/contributing/.

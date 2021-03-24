@@ -1,4 +1,4 @@
 [
-	{ "caption": "-", "id": "export" },
-	{ "caption": "Export", "command": "export_html_panel" }
+    { "caption": "-", "id": "export" },
+    { "caption": "Export", "command": "export_html_panel" }
 ]

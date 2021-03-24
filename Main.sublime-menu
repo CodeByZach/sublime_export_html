@@ -1,201 +1,201 @@
 [
-	{
-		"caption": "Tools",
-		"mnemonic": "T",
-		"id": "tools",
-		"children":
-		[
-			{
-				"id": "packages",
-				"caption": "Packages",
-				"children":
-				[
-					{
-						"caption": "ExportHtml",
-						"children":
-						[
-							{
-								"caption": "Export",
-								"children":
-								[
-									{
-										"command": "export_html_panel",
-										"caption": "HTML"
-									},
-									{
-										"command": "export_bbcode_panel",
-										"caption": "BBCode"
-									}
-								]
-							},
-							{
-								"caption": "Annotations",
-								"children":
-								[
-									{
-										"caption": "Enable Annotation Mode",
-										"command": "enable_annotation_mode"
-									},
-									{
-										"caption": "Disable Annotation Mode",
-										"command": "disable_annotation_mode"
-									},
-									{ "caption": "-" },
-									{
-										"caption": "Add Annotation",
-										"command": "add_annotation"
-									},
-									{
-										"caption": "Edit Annotation",
-										"command": "edit_annotation"
-									},
-									{
-										"caption": "Delete Annotation(s)",
-										"command": "delete_annotations"
-									},
-									{
-										"caption": "Delete All Annotations",
-										"command": "clear_annotations"
-									},
-									{
-										"caption": "Show Annotation Comment",
-										"command": "show_annotation_comment"
-									}
-								]
-							}
-						]
-					}
-				]
-			}
-		]
-	},
-	{
-		"caption": "Preferences",
-		"mnemonic": "n",
-		"id": "preferences",
-		"children":
-		[
-			{
-				"caption": "Package Settings",
-				"mnemonic": "P",
-				"id": "package-settings",
-				"children":
-				[
-					{
-						"caption": "ExportHtml",
-						"children":
-						[
-							{
-								"caption": "Settings",
-								"command": "edit_settings",
-								"args":
-								{
-									"base_file": "${packages}/ExportHtml/ExportHtml.sublime-settings",
-									"default": "{\n\t$0\n}\n"
-								}
-							},
-							{ "caption": "-" },
-							{
-								"caption": "Key Bindings",
-								"command": "z_edit_settings",
-								"args":
-								{
-									"base_file": "${packages}/ExportHtml/Default (${platform}).sublime-keymap",
-									"default": "[\n\t$0\n]\n"
-								}
-							},
-							{ "caption": "-" },
-							{
-								"caption": "Menus",
-								"children":
-								[
-									{
-										"caption": "Context Menu",
-										"command": "z_edit_settings",
-										"args":
-										{
-											"is_parent_setting": "1",
-											"base_file": "${packages}/ExportHtml/Context.sublime-menu",
-											"default": "[\n\t$0\n]\n"
-										}
-									},
-									{
-										"caption": "Side Bar Menu",
-										"command": "z_edit_settings",
-										"args":
-										{
-											"is_parent_setting": "1",
-											"base_file": "${packages}/ExportHtml/Side Bar.sublime-menu",
-											"default": "[\n\t$0\n]\n"
-										}
-									},
-									{
-										"caption": "Tab Menu",
-										"command": "z_edit_settings",
-										"args":
-										{
-											"is_parent_setting": "1",
-											"base_file": "${packages}/ExportHtml/Tab Context.sublime-menu",
-											"default": "[\n\t$0\n]\n"
-										}
-									},
-									{
-										"caption": "Main Menu",
-										"command": "z_edit_settings",
-										"args":
-										{
-											"is_parent_setting": "1",
-											"base_file": "${packages}/ExportHtml/Main.sublime-menu",
-											"default": "[\n\t$0\n]\n"
-										}
-									}
-								]
-							},
-							{
-								"caption": "Commands",
-								"command": "z_edit_settings",
-								"args":
-								{
-									"is_parent_setting": "1",
-									"base_file": "${packages}/ExportHtml/Default.sublime-commands",
-									"default": "[\n\t$0\n]\n"
-								}
-							},
-							{ "caption": "-" },
-							{
-								"caption": "Changelog",
-								"command": "export_html_changes"
-							},
-							{
-								"caption": "Documentation",
-								"command": "export_html_open_site",
-								"args": { "url": "https://codebyzach.github.io/sublime_export_html/" }
-							},
-							{
-								"caption": "Quick Start Guide",
-								"command": "export_html_doc",
-								"args": { "page": "${packages}/ExportHtml/QUICKSTART.md" }
-							},
-							{ "caption": "-" },
-							{
-								"caption": "Support Info",
-								"command": "export_html_support_info"
-							},
-							{
-								"caption": "Issues",
-								"command": "export_html_open_site",
-								"args": { "url": "https://github.com/facelessuser/ExportHtml/issues/" }
-							},
-							{ "caption": "-" },
-							{
-								"caption": "README",
-								"command": "open_file",
-								"args": { "file": "${packages}/ExportHtml/README.md" }
-							}
-						]
-					}
-				]
-			}
-		]
-	}
+    {
+        "caption": "Tools",
+        "mnemonic": "T",
+        "id": "tools",
+        "children":
+        [
+            {
+                "id": "packages",
+                "caption": "Packages",
+                "children":
+                [
+                    {
+                        "caption": "ExportHtml",
+                        "children":
+                        [
+                            {
+                                "caption": "Export",
+                                "children":
+                                [
+                                    {
+                                        "command": "export_html_panel",
+                                        "caption": "HTML"
+                                    },
+                                    {
+                                        "command": "export_bbcode_panel",
+                                        "caption": "BBCode"
+                                    }
+                                ]
+                            },
+                            {
+                                "caption": "Annotations",
+                                "children":
+                                [
+                                    {
+                                        "caption": "Enable Annotation Mode",
+                                        "command": "enable_annotation_mode"
+                                    },
+                                    {
+                                        "caption": "Disable Annotation Mode",
+                                        "command": "disable_annotation_mode"
+                                    },
+                                    { "caption": "-" },
+                                    {
+                                        "caption": "Add Annotation",
+                                        "command": "add_annotation"
+                                    },
+                                    {
+                                        "caption": "Edit Annotation",
+                                        "command": "edit_annotation"
+                                    },
+                                    {
+                                        "caption": "Delete Annotation(s)",
+                                        "command": "delete_annotations"
+                                    },
+                                    {
+                                        "caption": "Delete All Annotations",
+                                        "command": "clear_annotations"
+                                    },
+                                    {
+                                        "caption": "Show Annotation Comment",
+                                        "command": "show_annotation_comment"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "caption": "Preferences",
+        "mnemonic": "n",
+        "id": "preferences",
+        "children":
+        [
+            {
+                "caption": "Package Settings",
+                "mnemonic": "P",
+                "id": "package-settings",
+                "children":
+                [
+                    {
+                        "caption": "ExportHtml",
+                        "children":
+                        [
+                            {
+                                "caption": "Settings",
+                                "command": "edit_settings",
+                                "args":
+                                {
+                                    "base_file": "${packages}/ExportHtml/ExportHtml.sublime-settings",
+                                    "default": "{\n\t$0\n}\n"
+                                }
+                            },
+                            { "caption": "-" },
+                            {
+                                "caption": "Key Bindings",
+                                "command": "z_edit_settings",
+                                "args":
+                                {
+                                    "base_file": "${packages}/ExportHtml/Default (${platform}).sublime-keymap",
+                                    "default": "[\n\t$0\n]\n"
+                                }
+                            },
+                            { "caption": "-" },
+                            {
+                                "caption": "Menus",
+                                "children":
+                                [
+                                    {
+                                        "caption": "Context Menu",
+                                        "command": "z_edit_settings",
+                                        "args":
+                                        {
+                                            "is_parent_setting": "1",
+                                            "base_file": "${packages}/ExportHtml/Context.sublime-menu",
+                                            "default": "[\n\t$0\n]\n"
+                                        }
+                                    },
+                                    {
+                                        "caption": "Side Bar Menu",
+                                        "command": "z_edit_settings",
+                                        "args":
+                                        {
+                                            "is_parent_setting": "1",
+                                            "base_file": "${packages}/ExportHtml/Side Bar.sublime-menu",
+                                            "default": "[\n\t$0\n]\n"
+                                        }
+                                    },
+                                    {
+                                        "caption": "Tab Menu",
+                                        "command": "z_edit_settings",
+                                        "args":
+                                        {
+                                            "is_parent_setting": "1",
+                                            "base_file": "${packages}/ExportHtml/Tab Context.sublime-menu",
+                                            "default": "[\n\t$0\n]\n"
+                                        }
+                                    },
+                                    {
+                                        "caption": "Main Menu",
+                                        "command": "z_edit_settings",
+                                        "args":
+                                        {
+                                            "is_parent_setting": "1",
+                                            "base_file": "${packages}/ExportHtml/Main.sublime-menu",
+                                            "default": "[\n\t$0\n]\n"
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "caption": "Commands",
+                                "command": "z_edit_settings",
+                                "args":
+                                {
+                                    "is_parent_setting": "1",
+                                    "base_file": "${packages}/ExportHtml/Default.sublime-commands",
+                                    "default": "[\n\t$0\n]\n"
+                                }
+                            },
+                            { "caption": "-" },
+                            {
+                                "caption": "Changelog",
+                                "command": "export_html_changes"
+                            },
+                            {
+                                "caption": "Documentation",
+                                "command": "export_html_open_site",
+                                "args": { "url": "https://codebyzach.github.io/sublime_export_html/" }
+                            },
+                            {
+                                "caption": "Quick Start Guide",
+                                "command": "export_html_doc",
+                                "args": { "page": "${packages}/ExportHtml/QUICKSTART.md" }
+                            },
+                            { "caption": "-" },
+                            {
+                                "caption": "Support Info",
+                                "command": "export_html_support_info"
+                            },
+                            {
+                                "caption": "Issues",
+                                "command": "export_html_open_site",
+                                "args": { "url": "https://github.com/facelessuser/ExportHtml/issues/" }
+                            },
+                            { "caption": "-" },
+                            {
+                                "caption": "README",
+                                "command": "open_file",
+                                "args": { "file": "${packages}/ExportHtml/README.md" }
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
 ]

@@ -37,19 +37,7 @@ https://codebyzach.github.io/sublime_export_html/
 
 # License
 
-ExportHtml is released under the MIT license.
-
-Copyright (c) 2012 - 2021 Isaac Muse <isaacmuse@gmail.com>
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
-documentation files (the "Software"), to deal in the Software without restriction, including without limitation the
-rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit
-persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the
-Software.
-
-This work is licensed under the [The MIT License](LICENSE).
+ExportHtml is licensed under the [The MIT License](LICENSE).
 
 [github-ci-image]: https://github.com/codebyzach/sublime_export_html/workflows/build/badge.svg?branch=master&event=push
 [github-ci-link]: https://github.com/codebyzach/sublime_export_html/actions?query=workflow%3Abuild+branch%3Amaster

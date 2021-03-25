@@ -12,12 +12,12 @@ RE_LINE_PRESERVE = re.compile(r"\r?\n", re.MULTILINE)
 RE_COMMENT = re.compile(
     r'''(?x)
         (?P<comments>
-            /\*[^*]*\*+(?:[^/*][^*]*\*+)*/ # multi-line comments
-            | [ \t]*//(?:[^\r\n])*         # single line comments
+            /\*[^*]*\*+(?:[^/*][^*]*\*+)*/  # multi-line comments
+          | [ \t]*//(?:[^\r\n])*            # single line comments
         )
-        | (?P<code>
-            "(?:\\.|[^"\\])*"              # double quotes
-            | .[^/"']*                     # everything else
+      | (?P<code>
+            "(?:\\.|[^"\\])*"               # double quotes
+          | .[^/"']*                        # everything else
         )
     ''',
     re.DOTALL
@@ -30,15 +30,15 @@ RE_TRAILING_COMMA = re.compile(
                 (?P<square_ws>[\s\r\n]*) # white space
                 (?P<square_bracket>\])   # bracket
             )
-            | (?P<curly_comma>
+          | (?P<curly_comma>
                 ,                        # trailing comma
                 (?P<curly_ws>[\s\r\n]*)  # white space
                 (?P<curly_bracket>\})    # bracket
             )
         )
-        | (?P<code>
+      | (?P<code>
             "(?:\\.|[^"\\])*"            # double quoted string
-            | .[^,"']*                   # everything else
+          | .[^,"']*                     # everything else
         )
     ''',
     re.DOTALL

@@ -74,6 +74,6 @@ become optional.
 # I Need Help!
 
 That's okay.  Bugs are sometimes introduced or discovered in existing code.  Sometimes the documentation isn't clear.  
-Support can be found over on the [official repo](https://github.com/CodeByZach/sublime_export_html/issues).  Make sure to first search the documentation and previous issues  
+Support can be found over on the [official repo](https://github.com/codebyzach/sublime_export_html/issues).  Make sure to first search the documentation and previous issues  
 before opening a new issue.  And when creating a new issue, make sure to fill in the provided issue template.  Please  
 be courteous and kind in your interactions.

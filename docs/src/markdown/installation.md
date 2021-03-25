@@ -41,9 +41,9 @@ will have to keep all the packages updated yourself.
     - @facelessuser/sublime-markdown -> `python-markdown`
     - @facelessuser/sublime-coloraide -> `coloraide`
 
-2. Download and unpack or git clone the latest ExportHtml release and unpack as `ExportHtml`:
+2. Download and unpack or git clone the latest sublime_export_html release and unpack as `ExportHtml`:
 
-    - @facelessuser/ExportHtml -> ExportHtml
+    - @codebyzach/sublime_export_html -> ExportHtml
 
 3. Create a folder under `Packages` called `00-dependencies` and under that folder create a file called
    `00-dependencies.py`:
@@ -218,7 +218,7 @@ will have to keep all the packages updated yourself.
 
     ```
     cd /path/to/Sublime Text 3/Packages
-    git clone https://github.com/facelessuser/ExportHtml.git ExportHtml
+    git clone https://github.com/codebyzach/sublime_export_html.git ExportHtml
     ```
 
 3. Restart Sublime Text.

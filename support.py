@@ -31,8 +31,8 @@ frontmatter = {
             "pymdownx.magiclink": {
                 "repo_url_shortener": True,
                 "repo_url_shorthand": True,
-                "user": "facelessuser",
-                "repo": "ExportHtml"
+                "user": "codebyzach",
+                "repo": "sublime_export_html"
             }
         },
         "pymdownx.keys",

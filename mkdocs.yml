@@ -1,6 +1,6 @@
 site_name: ExportHtml Documentation
 site_url: https://codebyzach.github.io/sublime_export_html
-repo_url: https://github.com/CodeByZach/sublime_export_html
+repo_url: https://github.com/codebyzach/sublime_export_html
 edit_uri: tree/master/docs/src/markdown
 site_description: Sublime Text plugin that exports code to HTML or BBCODE for copying, printing, or saving.
 copyright: |
@@ -61,7 +61,7 @@ markdown_extensions:
       repo_url_shortener: true
       repo_url_shorthand: true
       social_url_shorthand: true
-      user: CodeByZach
+      user: codebyzach
       repo: sublime_export_html
   - pymdownx.tilde:
   - pymdownx.caret:
@@ -84,13 +84,6 @@ markdown_extensions:
   - pymdownx.details:
   - pymdownx.tabbed:
   - pymdownx.saneheaders:
-
-extra:
-  social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/CodeByZach
-    - icon: fontawesome/brands/discord
-      link: https://discord.gg/TWs8Tgr
 
 plugins:
   - search

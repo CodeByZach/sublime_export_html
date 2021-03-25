@@ -184,7 +184,7 @@
                             {
                                 "caption": "Issues",
                                 "command": "export_html_open_site",
-                                "args": { "url": "https://github.com/facelessuser/ExportHtml/issues/" }
+                                "args": { "url": "https://github.com/codebyzach/sublime_export_html/issues/" }
                             },
                             { "caption": "-" },
                             {

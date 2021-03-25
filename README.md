@@ -1,5 +1,5 @@
 # ExportHtml
-[![Latest Release](https://img.shields.io/github/tag/CodeByZach/sublime_export_html.svg?label=version)](https://github.com/CodeByZach/sublime_export_html/releases)
+[![Latest Release](https://img.shields.io/github/tag/codebyzach/sublime_export_html.svg?label=version)](https://github.com/codebyzach/sublime_export_html/releases)
 [![Build][github-ci-image]][github-ci-link]
 [![Package Control][pc-image]][pc-link]
 [![License][license-image]][license-link]
@@ -51,8 +51,8 @@ Software.
 
 This work is licensed under the [The MIT License](LICENSE).
 
-[github-ci-image]: https://github.com/CodeByZach/sublime_export_html/workflows/build/badge.svg?branch=master&event=push
-[github-ci-link]: https://github.com/CodeByZach/sublime_export_html/actions?query=workflow%3Abuild+branch%3Amaster
+[github-ci-image]: https://github.com/codebyzach/sublime_export_html/workflows/build/badge.svg?branch=master&event=push
+[github-ci-link]: https://github.com/codebyzach/sublime_export_html/actions?query=workflow%3Abuild+branch%3Amaster
 [pc-image]: https://img.shields.io/packagecontrol/dt/ExportHtml.svg?labelColor=333333&logo=sublime%20text
 [pc-link]: https://packagecontrol.io/packages/ExportHtml
 [license-image]: https://img.shields.io/badge/license-MIT-blue.svg?labelColor=333333

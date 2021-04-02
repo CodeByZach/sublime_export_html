@@ -36,6 +36,8 @@ from .lib.notify import notify
 import jinja2
 from collections import namedtuple
 
+AUTO = int(sublime.version()) >= 4095
+
 JS_DIR = ""
 
 PACKAGE_SETTINGS = "ExportHtml.sublime-settings"
@@ -452,12 +454,32 @@ class ExportHtml(object):
             fname = "Untitled"
         self.file_name = fname
 
+        temp = kwargs["color_scheme"]
         # Get color scheme
-        if kwargs["color_scheme"] is not None:
-            alt_scheme = kwargs["color_scheme"]
+        if temp is not None and (not AUTO or temp != "auto"):
+            alt_scheme = temp
         else:
             alt_scheme = eh_settings.get("alternate_scheme", False)
-        scheme_file = self.view.settings().get('color_scheme') if alt_scheme is False else alt_scheme
+            if AUTO and alt_scheme == "auto":
+                alt_scheme = False
+
+        switch = False
+        view_scheme = self.view.settings().get('color_scheme')
+        default = sublime.load_settings('Preferences.sublime-settings')
+        self.switch = False
+        self.save_to_view = False
+        self.view_scheme = view_scheme
+        if alt_scheme != view_scheme:
+            switch = True
+            if view_scheme != default.get('color_scheme'):
+                self.save_to_view = True
+            scheme_file = alt_scheme
+        else:
+            scheme_file = view_scheme
+
+        if scheme_file == 'auto' and AUTO:
+            info = sublime.ui_info()
+            scheme_file = info['color_scheme']['resolved_value']
 
         self.highlights = []
         if self.highlight_selections:
@@ -483,10 +505,13 @@ class ExportHtml(object):
                 self.gfground = self.fground
                 self.gbground = self.bground
         else:
-            self.fground = self.tweak(self.guess_style('source, text').fg_simulated, None)[0]
-            self.bground = self.tweak(None, self.guess_style('source, text').bg_simulated)[1]
-            self.gfground = self.tweak(self.view.style().get('gutter_foreground', self.bground), None)[0]
-            self.gbground = self.tweak(None, self.view.style().get('gutter', self.fground))[1]
+            self.switch = switch
+            if self.switch:
+                self.view.settings().set('color_scheme', scheme_file)
+            self.fground = self.tweak(self.view.style().get('foreground'), None)[0]
+            self.bground = self.tweak(None, self.view.style().get('background'))[1]
+            self.gfground = self.tweak(self.view.style().get('gutter_foreground', self.fground), None)[0]
+            self.gbground = self.tweak(None, self.view.style().get('gutter', self.bground))[1]
 
     def tweak(self, color1, color2):
         """Tweak color."""
@@ -1048,45 +1073,54 @@ class ExportHtml(object):
     def run(self, **kwargs):
         """Run command."""
 
-        inputs = self.process_inputs(**kwargs)
-        self.setup(**inputs)
+        try:
+            inputs = self.process_inputs(**kwargs)
+            self.setup(**inputs)
 
-        save_location = inputs["save_location"]
-        time_stamp = inputs["time_stamp"]
+            save_location = inputs["save_location"]
+            time_stamp = inputs["time_stamp"]
 
-        if save_location is not None:
-            fname = self.view.file_name()
-            if (
-                ((fname is None or not path.exists(fname)) and save_location == ".") or
-                not path.exists(save_location) or
-                not path.isdir(save_location)
-            ):
-                html_file = ".html"
-                save_location = None
-            elif save_location == ".":
-                html_file = "%s%s.html" % (fname, time.strftime(time_stamp, self.time))
-            elif fname is None or not path.exists(fname):
-                html_file = path.join(save_location, "Untitled%s.html" % time.strftime(time_stamp, self.time))
+            if save_location is not None:
+                fname = self.view.file_name()
+                if (
+                    ((fname is None or not path.exists(fname)) and save_location == ".") or
+                    not path.exists(save_location) or
+                    not path.isdir(save_location)
+                ):
+                    html_file = ".html"
+                    save_location = None
+                elif save_location == ".":
+                    html_file = "%s%s.html" % (fname, time.strftime(time_stamp, self.time))
+                elif fname is None or not path.exists(fname):
+                    html_file = path.join(save_location, "Untitled%s.html" % time.strftime(time_stamp, self.time))
+                else:
+                    html_file = path.join(
+                        save_location, "%s%s.html" % (path.basename(fname), time.strftime(time_stamp, self.time))
+                    )
             else:
-                html_file = path.join(
-                    save_location, "%s%s.html" % (path.basename(fname), time.strftime(time_stamp, self.time))
-                )
-        else:
-            html_file = ".html"
+                html_file = ".html"
 
-        with OpenHtml(html_file, save_location) as html:
-            self.write_header(html)
-            self.write_body(html)
-            if inputs["clipboard_copy"]:
-                html.seek(0)
-                sublime.set_clipboard(html.read())
-                notify("HTML copied to clipboard")
+            with OpenHtml(html_file, save_location) as html:
+                self.write_header(html)
+                self.write_body(html)
+                if inputs["clipboard_copy"]:
+                    html.seek(0)
+                    sublime.set_clipboard(html.read())
+                    notify("HTML copied to clipboard")
 
-        if inputs["view_open"]:
-            self.view.window().open_file(html.name)
-        else:
-            # Open in web browser
-            open_in_browser(html.name)
+            if inputs["view_open"]:
+                self.view.window().open_file(html.name)
+            else:
+                # Open in web browser
+                open_in_browser(html.name)
+        except Exception:
+            pass
+
+        if self.switch:
+            if self.save_to_view:
+                self.view.settings().set('color_scheme', self.view_scheme)
+            else:
+                self.view.settings().erase('color_scheme')
 
 
 def plugin_loaded():

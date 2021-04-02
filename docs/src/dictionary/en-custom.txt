@@ -59,3 +59,6 @@ tmThemes
 tooltip
 webcolor
 webpage
+subnotify
+dropdown
+html

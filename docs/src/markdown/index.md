@@ -27,3 +27,5 @@ document in Sublime Text to a HTML file.  It duplicates Sublime's theme colors a
 - [Andrew Gibson][gibson]: Original idea and base code for converting Sublime view to HTML and allowing me to build off
   it to make ExportHtml.
 - Print-Color and Print-Grayscale `sublime-color-scheme` files were derived from Monokai Bright.
+
+--8<-- "refs.md"

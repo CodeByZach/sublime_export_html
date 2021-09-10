@@ -1,5 +1,19 @@
 # ExportHtml
 
+## 2.17.5
+
+- **FIX**: Remove unnecessary dependencies.
+
+## 2.17.4
+
+- **FIX**: Fix `jinja2` import error.
+
+## 2.17.3
+
+- **FIX**: Fix a scheme loading related issue.
+- **FIX**: Ensure ExportHTML will work with Package Control 4.0 (compatibility issues with latest `mdpopups` needed for
+  Package Control 4.0).
+
 ## 2.17.2
 
 - **FIX**: Fix a regression where custom defined schemes are not used.

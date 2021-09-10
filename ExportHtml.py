@@ -33,7 +33,7 @@ from .lib.browser import open_in_browser
 from .lib.color_scheme_matcher import ColorSchemeMatcher
 from .lib.color_scheme_tweaker import ColorSchemeTweaker, ColorTweaker
 from .lib.notify import notify
-import jinja2
+from mdpopups import jinja2
 from collections import namedtuple
 
 AUTO = int(sublime.version()) >= 4095
@@ -469,7 +469,7 @@ class ExportHtml(object):
         self.switch = False
         self.save_to_view = False
         self.view_scheme = view_scheme
-        if alt_scheme != view_scheme:
+        if isinstance(alt_scheme, str) and alt_scheme != view_scheme:
             switch = True
             if view_scheme != default.get('color_scheme'):
                 self.save_to_view = True

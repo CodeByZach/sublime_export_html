@@ -4,19 +4,19 @@
         "caption": "Export",
         "children":
         [
-            { "command": "export_html_panel", "caption": "Export to HTML" },
+            { "caption": "Export to HTML", "command": "export_html_panel" },
             {
                 "caption": "Annotations",
                 "children":
                 [
-                    { "command": "enable_annotation_mode", "caption": "Enable Annotation Mode" },
-                    { "command": "disable_annotation_mode", "caption": "Disable Annotation Mode" },
+                    { "caption": "Enable Annotation Mode",  "command": "enable_annotation_mode" },
+                    { "caption": "Disable Annotation Mode", "command": "disable_annotation_mode" },
                     { "caption": "-" },
-                    { "command": "add_annotation", "caption": "Add Annotation" },
-                    { "command": "edit_annotation", "caption": "Edit Annotation" },
-                    { "command": "delete_annotations", "caption": "Delete Annotation(s)" },
-                    { "command": "clear_annotations", "caption": "Delete All Annotations" },
-                    { "command": "show_annotation_comment", "caption": "Show Annotation Comment" }
+                    { "caption": "Add Annotation",          "command": "add_annotation" },
+                    { "caption": "Edit Annotation",         "command": "edit_annotation" },
+                    { "caption": "Delete Annotation(s)",    "command": "delete_annotations" },
+                    { "caption": "Delete All Annotations",  "command": "clear_annotations" },
+                    { "caption": "Show Annotation Comment", "command": "show_annotation_comment" }
                 ]
             }
         ]

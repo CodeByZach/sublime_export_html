@@ -6,8 +6,8 @@
         "children":
         [
             {
-                "id": "packages",
                 "caption": "Packages",
+                "id": "packages",
                 "children":
                 [
                     {
@@ -18,49 +18,22 @@
                                 "caption": "Export",
                                 "children":
                                 [
-                                    {
-                                        "command": "export_html_panel",
-                                        "caption": "HTML"
-                                    },
-                                    {
-                                        "command": "export_bbcode_panel",
-                                        "caption": "BBCode"
-                                    }
+                                    { "caption": "HTML",   "command": "export_html_panel" },
+                                    { "caption": "BBCode", "command": "export_bbcode_panel" }
                                 ]
                             },
                             {
                                 "caption": "Annotations",
                                 "children":
                                 [
-                                    {
-                                        "caption": "Enable Annotation Mode",
-                                        "command": "enable_annotation_mode"
-                                    },
-                                    {
-                                        "caption": "Disable Annotation Mode",
-                                        "command": "disable_annotation_mode"
-                                    },
+                                    { "caption": "Enable Annotation Mode",  "command": "enable_annotation_mode" },
+                                    { "caption": "Disable Annotation Mode", "command": "disable_annotation_mode" },
                                     { "caption": "-" },
-                                    {
-                                        "caption": "Add Annotation",
-                                        "command": "add_annotation"
-                                    },
-                                    {
-                                        "caption": "Edit Annotation",
-                                        "command": "edit_annotation"
-                                    },
-                                    {
-                                        "caption": "Delete Annotation(s)",
-                                        "command": "delete_annotations"
-                                    },
-                                    {
-                                        "caption": "Delete All Annotations",
-                                        "command": "clear_annotations"
-                                    },
-                                    {
-                                        "caption": "Show Annotation Comment",
-                                        "command": "show_annotation_comment"
-                                    }
+                                    { "caption": "Add Annotation",          "command": "add_annotation" },
+                                    { "caption": "Edit Annotation",         "command": "edit_annotation" },
+                                    { "caption": "Delete Annotation(s)",    "command": "delete_annotations" },
+                                    { "caption": "Delete All Annotations",  "command": "clear_annotations" },
+                                    { "caption": "Show Annotation Comment", "command": "show_annotation_comment" }
                                 ]
                             }
                         ]
@@ -114,28 +87,7 @@
                                         "command": "z_edit_settings",
                                         "args":
                                         {
-                                            "is_parent_setting": "1",
                                             "base_file": "${packages}/ExportHtml/Context.sublime-menu",
-                                            "default": "[\n\t$0\n]\n"
-                                        }
-                                    },
-                                    {
-                                        "caption": "Side Bar Menu",
-                                        "command": "z_edit_settings",
-                                        "args":
-                                        {
-                                            "is_parent_setting": "1",
-                                            "base_file": "${packages}/ExportHtml/Side Bar.sublime-menu",
-                                            "default": "[\n\t$0\n]\n"
-                                        }
-                                    },
-                                    {
-                                        "caption": "Tab Menu",
-                                        "command": "z_edit_settings",
-                                        "args":
-                                        {
-                                            "is_parent_setting": "1",
-                                            "base_file": "${packages}/ExportHtml/Tab Context.sublime-menu",
                                             "default": "[\n\t$0\n]\n"
                                         }
                                     },
@@ -144,8 +96,43 @@
                                         "command": "z_edit_settings",
                                         "args":
                                         {
-                                            "is_parent_setting": "1",
                                             "base_file": "${packages}/ExportHtml/Main.sublime-menu",
+                                            "default": "[\n\t$0\n]\n"
+                                        }
+                                    },
+                                    {
+                                        "caption": "Side Bar Menu",
+                                        "command": "z_edit_settings",
+                                        "args":
+                                        {
+                                            "base_file": "${packages}/ExportHtml/Side Bar.sublime-menu",
+                                            "default": "[\n\t$0\n]\n"
+                                        }
+                                    },
+                                    {
+                                        "caption": "Side Bar Open Files Menu",
+                                        "command": "z_edit_settings",
+                                        "args":
+                                        {
+                                            "base_file": "${packages}/ExportHtml/Tab Sidebar Context.sublime-menu",
+                                            "default": "[\n\t$0\n]\n"
+                                        }
+                                    },
+                                    {
+                                        "caption": "Tab Menu",
+                                        "command": "z_edit_settings",
+                                        "args":
+                                        {
+                                            "base_file": "${packages}/ExportHtml/Tab Context.sublime-menu",
+                                            "default": "[\n\t$0\n]\n"
+                                        }
+                                    },
+                                    {
+                                        "caption": "Widget Menu",
+                                        "command": "z_edit_settings",
+                                        "args":
+                                        {
+                                            "base_file": "${packages}/ExportHtml/Widget Context.sublime-menu",
                                             "default": "[\n\t$0\n]\n"
                                         }
                                     }
@@ -156,7 +143,6 @@
                                 "command": "z_edit_settings",
                                 "args":
                                 {
-                                    "is_parent_setting": "1",
                                     "base_file": "${packages}/ExportHtml/Default.sublime-commands",
                                     "default": "[\n\t$0\n]\n"
                                 }

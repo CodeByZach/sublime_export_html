@@ -27,7 +27,7 @@ from __future__ import absolute_import
 import sublime
 import codecs
 import re
-from .file_strip.json import sanitize_json
+from .file_strip.json_parse import sanitize_json
 from .st_colormod import Color
 from .tmtheme import ColorSRGBX11
 from os import path

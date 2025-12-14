@@ -2,13 +2,12 @@
 .gitattributes export-ignore
 
 # Files & folders that should not be included in production.
-/.github         export-ignore
-/docs/           export-ignore
-/tests/          export-ignore
+/.github/        export-ignore
 /.jshintignore   export-ignore
 /.prospector.yml export-ignore
 /.pyspelling.yml export-ignore
-/.travis.yml     export-ignore
+/docs/           export-ignore
 /mkdocs.yml      export-ignore
 /run_tests.sh    export-ignore
+/tests/          export-ignore
 /tox.ini         export-ignore

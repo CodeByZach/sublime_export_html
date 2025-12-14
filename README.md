@@ -39,8 +39,8 @@ https://codebyzach.github.io/sublime_export_html/
 
 ExportHtml is licensed under the [The MIT License](LICENSE).
 
-[github-ci-image]: https://github.com/codebyzach/sublime_export_html/workflows/build/badge.svg?branch=master&event=push
-[github-ci-link]: https://github.com/codebyzach/sublime_export_html/actions?query=workflow%3Abuild+branch%3Amaster
+[github-ci-image]: https://github.com/CodeByZach/sublime_export_html/actions/workflows/build.yml/badge.svg?branch=master
+[github-ci-link]: https://github.com/CodeByZach/sublime_export_html/actions/workflows/build.yml
 [pc-image]: https://img.shields.io/packagecontrol/dt/ExportHtml.svg?labelColor=333333&logo=sublime%20text
 [pc-link]: https://packagecontrol.io/packages/ExportHtml
 [license-image]: https://img.shields.io/badge/license-MIT-blue.svg?labelColor=333333

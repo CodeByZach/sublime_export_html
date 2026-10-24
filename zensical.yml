@@ -4,20 +4,11 @@ repo_url: https://github.com/codebyzach/sublime_export_html
 edit_uri: tree/master/docs/src/markdown
 site_description: Sublime Text plugin that exports code to HTML or BBCODE for copying, printing, or saving.
 copyright: |
-  Copyright &copy; 2012 - 2025 <a href="https://github.com/facelessuser"  target="_blank" rel="noopener">Isaac Muse</a>
+  Copyright &copy; 2012 - 2026 <a href="https://github.com/facelessuser"  target="_blank" rel="noopener">Isaac Muse</a>
 
 docs_dir: docs/src/markdown
 theme:
-  name: material
-  icon:
-    logo: material/book-open-page-variant
-  palette:
-    scheme: dracula
-    primary: deep purple
-    accent: deep purple
-  font:
-    text: Roboto
-    code: Roboto Mono
+  name: zensical_pymdownx
   features:
     - navigation.tabs
     - navigation.top
@@ -45,11 +36,10 @@ markdown_extensions:
   - markdown.extensions.md_in_html:
   - pymdownx.superfences:
   - pymdownx.highlight:
+      line_spans: __codeline
+      line_anchors: __codelineno
+      anchor_linenums: True
       extend_pygments_lang:
-        - name: php-inline
-          lang: php
-          options:
-            startinline: true
         - name: pycon3
           lang: pycon
           options:
@@ -130,10 +120,9 @@ markdown_extensions:
   - pymdownx.blocks.definition:
   - pymdownx.blocks.tab:
       alternate_style: True
-
-plugins:
-  - search
-  - git-revision-date-localized
-  - mkdocs_pymdownx_material_extras
-  - minify:
-      minify_html: true
+      combine_header_slug: True
+      slugify: !!python/object/apply:pymdownx.slugs.slugify {kwds: {case: lower}}
+  - pymdownx.blocks.caption:
+  - pymdownx.quotes:
+      callouts: true
+  - pymdownx.bracketspan:

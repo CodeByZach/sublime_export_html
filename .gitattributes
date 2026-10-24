@@ -7,7 +7,7 @@
 /.prospector.yml export-ignore
 /.pyspelling.yml export-ignore
 /docs/           export-ignore
-/mkdocs.yml      export-ignore
+/zensical.yml    export-ignore
 /run_tests.sh    export-ignore
 /tests/          export-ignore
 /tox.ini         export-ignore

@@ -1,4 +1,7 @@
-mkdocs_pymdownx_material_extras>=1.4
-mkdocs-git-revision-date-localized-plugin
-mkdocs-minify-plugin
+zensical
+markdown
+pymdown-extensions
+zensical-pymdownx @ git+https://github.com/facelessuser/pymdownx-zensical-theme.git@a92e2789d4aa02fcfcb7560ab60d10f3b0acb508
+pymdown_lexers @ git+https://github.com/facelessuser/pymdown-lexers.git@4cd030ad37bedff37345b37c1f1cd118530429ed
 pyspelling
+python-minifier

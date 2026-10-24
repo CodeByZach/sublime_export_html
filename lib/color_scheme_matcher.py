@@ -417,7 +417,7 @@ class ColorSchemeMatcher(object):
             if not simple_strip:
                 if bground is None:
                     bground = self.special_colors['background']['color_simulated']
-                Color.layer([rgb, Color(bground if bground != "" else "#FFFFFF")])
+                rgb = Color.layer([rgb, Color(bground if bground != "" else "#FFFFFF")])
 
             gradient.append((color, rgb.to_string(**HEX)))
         if gradient:
@@ -445,7 +445,7 @@ class ColorSchemeMatcher(object):
         if not simple_strip:
             if bground is None:
                 bground = self.special_colors['background']['color_simulated']
-            Color.layer([rgb, Color(bground if bground != "" else "#FFFFFF")])
+            rgb = Color.layer([rgb, Color(bground if bground != "" else "#FFFFFF")])
 
         return color, rgb.to_string(**HEX)
 

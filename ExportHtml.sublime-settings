@@ -4,7 +4,7 @@
      * to an alternate default Color scheme here.
      *
      * Example:
-     *   "alternate_scheme": "Packages/ExportHtml/themes/Print-Color.tmTheme"
+     *   "alternate_scheme": "Packages/ExportHtml/ColorSchemes/Print Color.sublime-color-scheme"
      */
     "alternate_scheme": false,
 

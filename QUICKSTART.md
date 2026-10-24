@@ -50,7 +50,7 @@ If you want a print entry in the menu, you can add something like this in `Main.
                     "wrap": 900,
                     "browser_print": true,
                     "multi_select": true,
-                    "color_scheme": "Packages/ExportHtml/ColorSchemes/Print-Grayscale.tmTheme",
+                    "color_scheme": "Packages/ExportHtml/ColorSchemes/Print Grayscale.sublime-color-scheme",
                     "style_gutter": false
                 },
                 "caption": "Print (Export HTML)"

@@ -6,10 +6,6 @@ ExportHtml is a plugin that can take a Sublime Text view (or selection(s) within
 reproduces the entire selection (text, colors, etc.) and opens the HTML document in your web browser, copies the content  
 to the clipboard, or opens a new Sublime Text view with the HTML content.
 
-ExportHtml has a BBCode option as well to generate a BBCode output for forums that have enabled all the required features.  
-The BBCode variant will not open in an external browser, but it will copy the content to the clipboard or open a new  
-Sublime Text view with the BBCode content.
-
 To get started, you can run the command `Export to HTML: Show Export Menu` and select an option from the default entries.  
 These entries are defined in the [settings file](sub://Packages/ExportHtml/ExportHtml.sublime-settings).
 

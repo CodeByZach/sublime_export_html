@@ -1,24 +1,19 @@
 [
     { "caption": "-", "id": "export" },
     {
-        "caption": "Export",
+        "caption": "ExportHtml",
         "children":
         [
-            { "caption": "Export to HTML", "command": "export_html_panel" },
-            {
-                "caption": "Annotations",
-                "children":
-                [
-                    { "caption": "Enable Annotation Mode",  "command": "enable_annotation_mode" },
-                    { "caption": "Disable Annotation Mode", "command": "disable_annotation_mode" },
-                    { "caption": "-" },
-                    { "caption": "Add Annotation",          "command": "add_annotation" },
-                    { "caption": "Edit Annotation",         "command": "edit_annotation" },
-                    { "caption": "Delete Annotation(s)",    "command": "delete_annotations" },
-                    { "caption": "Delete All Annotations",  "command": "clear_annotations" },
-                    { "caption": "Show Annotation Comment", "command": "show_annotation_comment" }
-                ]
-            }
+            { "caption": "Export to HTML",          "command": "export_html_panel" },
+            { "caption": "-" },
+            { "caption": "Enable Annotation Mode",  "command": "enable_annotation_mode" },
+            { "caption": "Disable Annotation Mode", "command": "disable_annotation_mode" },
+            { "caption": "-" },
+            { "caption": "Add Annotation",          "command": "add_annotation" },
+            { "caption": "Edit Annotation",         "command": "edit_annotation" },
+            { "caption": "Delete Annotation(s)",    "command": "delete_annotations" },
+            { "caption": "Delete All Annotations",  "command": "clear_annotations" },
+            { "caption": "Show Annotation Comment", "command": "show_annotation_comment" }
         ]
     }
 ]

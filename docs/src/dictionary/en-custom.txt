@@ -2,6 +2,7 @@ BBCode
 Bitbucket
 Changelog
 Cmd
+ColorSchemes
 Control's
 Ctrl
 EmojiOne
